@@ -1,0 +1,23 @@
+{
+  "name": "project-restaurant-page",
+  "version": "1.0.0",
+  "description": "Project Restaurant Page - Assigned by The Odin Project Full Stack Course",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saad-hu/project-restaurant-page.git"
+  },
+  "author": "saad9191h@gmail.com",
+  "bugs": {
+    "url": "https://github.com/saad-hu/project-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/saad-hu/project-restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
