@@ -1,3 +1,4 @@
+import './style.css';
 
 let body = document.querySelector('body');
 //creating header element
@@ -33,8 +34,5 @@ for(let i = 0; i < 3; i++) {
 }
 //appending navigation to header
 header.appendChild(navigation);
-
-
-
 
 body.appendChild(header);
