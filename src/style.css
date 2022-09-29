@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: Italianno;
+    src: url(./fonts/Italianno/Italianno-Regular.ttf);
+}
 
 html {
     box-sizing: border-box;
@@ -12,12 +17,16 @@ html {
 body {
     color: white;
     background-color: rgba(0, 0, 0, 0.267);
-    /* background-image: url(./images/body-bg-5332x3000.jpg);
+    font-family: 'Roboto', sans-serif;
+    background-image: url(./images/body-bg-5332x3000.jpg);
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; */
-    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex;
+    flex-direction: column; */
 }
+
 
 .header {
     height: max(32vh, 200px);
@@ -29,13 +38,13 @@ body {
 }
 
 .heading {
-    font-family: 'Italianno', cursive;
+    font-family: Italianno;
     font-size: 100px;
 }
 
 ul.navigation {
     list-style: none;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .navigation li {
@@ -43,3 +52,31 @@ ul.navigation {
     padding: 15px;
 }
 
+
+.main-container {
+    width: max(60%, 300px);
+    margin: 20px auto;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.home-steak-gif {
+    width: min(100%, 380px);
+    height: auto;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+
+footer.footer {
+    /* position: absolute;
+    bottom: 0px;
+    width: 100vw; */
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px 0;
+}
