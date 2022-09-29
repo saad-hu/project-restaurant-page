@@ -1,0 +1,8 @@
+[
+    {"id": 0, "name": "FILET MIGNON", "price": 55},
+    {"id": 1, "name": "CHATEAUBRIAND", "price": 50},
+    {"id": 2, "name": "DELMONICO", "price": 45},
+    {"id": 3, "name": "PORTERHOUSE", "price": 40},
+    {"id": 4, "name": "SMOKED BBQ BURGER", "price": 20},
+    {"id": 5, "name": "GOUDA BURGER", "price": 15}
+]
