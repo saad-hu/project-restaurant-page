@@ -27,7 +27,7 @@ class createHeaderFooter {
             switch (i) {
                 case 0:
                     navItem.textContent = 'Home';
-                    navItem.className = 'nav-item home-tab-button';
+                    navItem.className = 'nav-item home-tab-button active';
                     break;
                 case 1:
                     navItem.textContent = 'Menu';
