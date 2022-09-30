@@ -2,13 +2,14 @@ import './style.css';
 import createHeaderFooter from './header-footer.js';
 import createHomeTab from './home.js';
 import createMenuTab from './menu.js';
-
+import createContactTab from './contact.js';
 
 //reference to body. body will have three elements appended to it: .header, .main-container, .footer
 let body = document.querySelector('body');
 //creating main container in which all of the tabs data will go
 let mainContainer = document.createElement('div');
 mainContainer.classList.add('main-container');
+
 
 //when the window loads, this block of code is run. header, home tab and footer are added to the dom
 createHeaderFooter.createHeader(body);
@@ -26,6 +27,8 @@ let contactTabButton = document.querySelector('.contact-tab-button');
 let allNavButtons = document.querySelectorAll('.nav-item');
 
 
+//adding event listener to each nav menu tab
+
 homeTabButton.addEventListener('click', () => {
     deleteChildren(mainContainer);
     createHomeTab(mainContainer);
@@ -38,17 +41,18 @@ menuTabButton.addEventListener('click', () => {
     makeCurrentNavButtonActive(menuTabButton);
 });
 
+contactTabButton.addEventListener('click', () => {
+    deleteChildren(mainContainer);
+    createContactTab(mainContainer);
+    makeCurrentNavButtonActive(contactTabButton);
+});
 
 
-
-
-
-
-
+//utility functions
 
 function makeCurrentNavButtonActive(currentNavButton) {
     allNavButtons.forEach(button => {
-        if(button === currentNavButton) currentNavButton.classList.add('active');
+        if (button === currentNavButton) currentNavButton.classList.add('active');
         else button.classList.remove('active');
     })
 }
