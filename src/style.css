@@ -23,8 +23,9 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /*so we can set flex-grow to 1 on main container and push the footer down*/
 }
 
 
@@ -64,7 +65,6 @@ li.nav-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
 .main-container {
     width: max(60%, 310px);
     margin: 30px auto;
@@ -74,6 +74,7 @@ li.nav-item:hover {
     font-size: 20px;
     line-height: 28px;
     border: 1px rgba(255, 255, 255, 0.2) solid;
+    flex-grow: 1; /*to push the footer down when content is very short */
 }
 
 .home-steak-gif {
@@ -115,6 +116,7 @@ li.nav-item:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 25px;
 }
 
@@ -128,17 +130,12 @@ li.nav-item:hover {
     height: 30px;
 }
 
-
 footer.footer {
-    /* position: absolute;
-    bottom: 0px;
-    width: 100vw; */
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px 0;
 }
 
 .footer a {
-    /* text-decoration: none; */
     color: white;
 }

@@ -12,18 +12,18 @@ function createHomeTab(container) {
     let homeIntroPara = document.createElement('p');
     homeIntroPara.classList.add('home-intro-para');
     homeIntroPara.textContent = 'Bistecca brings you the ultimate world of flavors. A fine dining restaurant with excellent food, great ambience and exceptional service. Order your favorite dish online from Bistecca and witness the best gourmet experience.'
-    container.appendChild(homeIntroPara);
+    homeTab.appendChild(homeIntroPara);
 
     //image for home tab
     let homeGif = new Image();
     homeGif.classList.add('home-steak-gif');
     homeGif.src = steakGif;
-    container.appendChild(homeGif);
+    homeTab.appendChild(homeGif);
 
     //second para in home tab
     let homeSincePara = document.createElement('p');
     homeSincePara.textContent = 'Serving the best steaks in town since 1980';
-    container.appendChild(homeSincePara);
+    homeTab.appendChild(homeSincePara);
 
     //appending the homeTab to the container taken as an input parameter
     container.appendChild(homeTab);
