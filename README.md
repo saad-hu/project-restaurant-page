@@ -8,12 +8,19 @@
 ![](/src/images/res-demo-0.png)
 
 ![](/src/images/res-demo-1.png)
+
+![](/src/images/res-demo-2.png)
 ### Mobile View
-![](/images/weather-demo-mob-0.png)
+![](/src/images/res-demo-mob-0.png)
+
+![](/src/images/res-demo-mob-1.png)
+
+![](/src/images/res-demo-mob-2.png)
 
 ## Description and Outcome
-This project is a weather app build using [Open Weather API](https://openweathermap.org/api). 
 
-Making this project, I learned alot about Asynchronous JS, Promises. It also helped to expand my knowledge on callbacks and when to avoid them. I also learned about CSS transitions while making this project.    
+This restaurant website was build using webpack. No HTML code was written for this project. Only JS was used to create elements and add them to the DOM. Each page has it's own JS module. 
 
-Build using vanilla JavaScript, CSS and HTML.
+I learned alot about webpack and what are a module bundler's benefits while making this project. Using and understanding webpack loaders and plugins were a crucial part of this project.   
+
+Build using vanilla JavaScript, webpack and CSS.
